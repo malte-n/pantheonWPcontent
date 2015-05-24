@@ -1,0 +1,151 @@
+/*
+Theme Name: Intro Child
+Description: Child theme for the Intro theme
+Author: Malte Niepel
+Author URI: http://www.malteniepel.com
+Template: intro
+Version: 1.0
+*/
+
+
+/*						Header Elements
+*/
+.header-fixed {
+	background: none;
+}
+
+@media screen and (min-width: 601px) {
+	.admin-bar .header-fixed,
+	.admin-bar .sidebar-btn {
+		top: 32px;
+		padding: 10px 40px;
+	}
+
+	}
+	header.header-fixed.scroll, 
+	header.header-fixed:hover {
+		background: rgba(0,0,0,.6);
+	}	
+}
+
+.header-fixed {
+	position:fixed;
+	top:0;
+	right:0;
+	width:100%;
+	z-index:999;
+	transition: background 1s;
+}
+
+
+.site-logo {
+	max-width: 100px;
+}
+
+.site-logo:hover {
+	transition: max-width 0.6s ease-out;
+	max-width: 160px;
+}
+
+
+/* 						Teamtreehouse Widget 
+*/
+
+#pg-11-1 {
+	display: none;
+}
+
+h3.widget-title {
+	font-size: auto;
+	margin-bottom: 0px;
+	line-height: 1;
+}
+
+.so-panel .widget-title:after, .panel .widget-title:after {
+	height: 0;
+}
+
+@media screen and (min-width: 920px) {
+
+#pg-11-1 {
+	display: initial;
+}
+
+.widget_wptreehouse_affiliates_widget {
+	margin-top: -60px;
+}
+}
+
+
+/*.wptreehouse-badges {    needs to float in order to get it centered
+	clear: both;
+  	display: block;
+  	margin: 0 auto;
+}*/
+
+@media screen and (min-width: 601px) {
+	/*.widget_wptreehouse_badges_widget {
+	margin-bottom: 60px;
+	}*/
+
+	.wptreehouse-badges {
+		margin-bottom: 60px;
+	}
+
+	.widget_wptreehouse_affiliates_widget {
+		margin-top: 100px;
+	}
+
+
+	.so-panel .widget-title, .panel .widget-title {
+		margin-bottom: 20px;
+	}
+
+	div#pg-11-1 {
+		margin-bottom: 80px;
+	}
+}
+
+
+ /*						Header Menu
+ */
+
+/*@media screen and (min-width: 601px) {*/
+	.menu {
+		float: right;
+		
+	}
+
+	.menu li {
+		display: inline-block;
+		text-align: center;
+		margin-top: 40px;
+		margin-right: 20px;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.sidebar-btn,
+	.cross {
+		display: none;
+	}
+/*}*/
+
+ /*						Background
+ */
+
+
+
+@media screen and (max-width: 601px) {
+	#header-banner {
+  		display: none;
+	}
+}
+
+body {
+
+	background: green;
+}
+
+

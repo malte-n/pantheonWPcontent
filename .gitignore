@@ -1,0 +1,6 @@
+# Ignore user-generated content
+gallery/*
+cache/*
+uploads/*
+wp-cache-config.php
+advanced-cache.php
